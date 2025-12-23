@@ -4,3 +4,6 @@
   font-weight: var(--weight); /* Use a CSS variable */
   font-style: normal;
 }
+img {
+max-width: 300px;
+}

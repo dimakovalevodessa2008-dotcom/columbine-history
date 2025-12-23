@@ -1,0 +1,6 @@
+.roboto-condensed-unique {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--weight); /* Use a CSS variable */
+  font-style: normal;
+}

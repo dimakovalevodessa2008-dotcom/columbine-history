@@ -1,26 +1,12 @@
 .roboto-condensed-unique {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
-  font-weight: var(--weight);
+  font-weight: var(--weight); /* Use a CSS variable */
   font-style: normal;
 }
 img {
-  max-width: 300px;
+max-width: 300px;
 }
-
-* {
+*{
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.text,
-header,
-footer,
-section {
-  max-width: 1200px;
-  margin: 0 auto;
 }

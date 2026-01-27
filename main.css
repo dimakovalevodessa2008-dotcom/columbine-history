@@ -5,8 +5,21 @@
   font-style: normal;
 }
 img {
-max-width: 300px;
+  max-width: 300px;
 }
-*{
+* {
   box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  background: url("https://cspv.colorado.edu/wp-content/uploads/2024/04/Columbine-High-scaled.webp");
+  background-size: contain;
+  margin-top: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

@@ -12,6 +12,10 @@
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+      iframe {
+        max-width: 100%;
+        min-height: 320px;
+      }
     </style>
     <link rel="stylesheet" href="main.css" />
   </head>
@@ -42,28 +46,69 @@
           </div>
         </div>
       </nav>
-
-      <div class="alert alert-danger my-4 col-md-8 mx-auto" role="alert">
-        <h5>Попередження для батьків</h5>
-        <p>Слідкуйте уважніше за дітьми щоб не було катастрофічних наслідків</p>
-      </div>
     </header>
 
-    <main id="main" class="banner">
-      <h1>Правила яких повинні дотримуватися в школах</h1>
+    <main id="main" class="pt-5 banner text-center">
+      <h1>Правила взаємодії в школах</h1>
       <p>
-        Вченими було розроблено ряд правил, які допоможуть уникнути трагедій в школах. Над ними працювали психологи,
-        соціологи та інші фахівці.
+        Вченими було розроблено ряд правил, які допоможуть уникнути трагедій в школах. <br />
+        Над ними працювали психологи, соціологи та інші фахівці.
         <br />
 
         Чому важливо дотримуватися цих правил:
       </p>
 
-      <ul>
-        <li>Безпека учнів</li>
-        <li>Підтримка морального стану учнів</li>
-        <li>Запобігання фізичному та психологічному насильству</li>
-      </ul>
+      <section class="container">
+        <div class="filters">
+          <button class="btn btn-primary" data-category="all">Всі</button>
+          <button class="btn btn-light" data-category="safety">Безпека</button>
+          <button class="btn btn-light" data-category="moral">Мораль</button>
+          <button class="btn btn-light" data-category="prevention">Запобігання</button>
+        </div>
+        <div class="row g-2 gx-2 gy-2 my-5 justify-content-around">
+          <div class="rule-item col-md-5 my-3" data-category="safety">
+            <p>Підвищення безпеки в школах</p>
+            <p>Встановлення металошукачів та камер спостереження для запобігання проникненню зброї.</p>
+          </div>
+          <div class="rule-item col-md-5 my-3" data-category="moral">
+            <p>Підтримка морального клімату</p>
+            <p>Проведення регулярних бесід про толерантність та повагу до інших.</p>
+          </div>
+          <div class="rule-item col-md-5 my-3" data-category="prevention">
+            <p>Раннє виявлення проблем</p>
+            <p>Навчання вчителів та персоналу розпізнаванню ознак психологічних проблем у учнів.</p>
+          </div>
+          <div class="rule-item col-md-5 my-3" data-category="safety">
+            <p>План дій у надзвичайних ситуаціях</p>
+            <p>Регулярні тренування з евакуації та дій у випадку загрози.</p>
+          </div>
+          <div class="rule-item col-md-5 my-3" data-category="moral">
+            <p>Підтримка учнів</p>
+            <p>Створення програм підтримки для учнів, які відчувають себе ізольованими або мають проблеми.</p>
+          </div>
+          <div class="rule-item col-md-5 my-3" data-category="prevention">
+            <p>Співпраця з батьками</p>
+            <p>Заходи з участю батьків у запобіганні проблем та травм</p>
+          </div>
+        </div>
+      </section>
+
+      <iframe
+        class="mb-5"
+        width="600"
+        height="315"
+        src="https://www.youtube.com/embed/1-ciE1JZESo?si=lsxZtTHzmfzBzK0I"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <div class="alert alert-danger my-4 col-md-8 mx-auto" role="alert">
+        <h5>Попередження для батьків</h5>
+        <p>Слідкуйте уважніше за дітьми щоб не було катастрофічних наслідків</p>
+      </div>
     </main>
     <footer>
       <img
@@ -82,4 +127,5 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"
   ></script>
+  <script src="./script.js"></script>
 </html>
